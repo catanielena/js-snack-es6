@@ -39,7 +39,7 @@ const team = [
         tFouls: 0
     }
 ];
-let tNameFouls = [];
+const tNameFouls = [];
 //*
 //*
 //array di oggetti 
@@ -47,17 +47,15 @@ let tNameFouls2 = [];
 for(let i = 0; i < team.length; i++) {
     team[i].tScore = getRandomIntInclusive(1, 100);
     team[i].tFouls = getRandomIntInclusive(1, 100);
-    let {tName, tFouls} = team[i];
+    const {tName, tFouls} = team[i];
     tNameFouls.push(tName, tFouls);
     //*
     //*
     //array di oggetti
-    let tNameFoulsItem = {
+    tNameFouls2.push({
         tName,
         tFouls
-    };
-    tNameFouls2.push(tNameFoulsItem);
-
+    });
 }
 console.log(team);
 console.log(tNameFouls);
