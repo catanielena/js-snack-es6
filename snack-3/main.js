@@ -4,7 +4,7 @@
 // *
 // * For each
 // *
-function splitArr(arr, a, b) {
+function splitArrForEach(arr, a, b) {
     const result = [];
     arr.forEach((elm, i) => {
         if (i>=a && i<=b && !(isNaN(a) || isNaN(b) || a> b || b>arr.length)) {
@@ -16,8 +16,8 @@ function splitArr(arr, a, b) {
 // *
 // * Filter
 // *
-const splitArr = (arr, a, b) => arr.filter((elm, i) => i>=a && i<=b && !(isNaN(a) || isNaN(b) || a> b || b>arr.length));
+const splitArrFilter = (arr, a, b) => arr.filter((elm, i) => i>=a && i<=b && !(isNaN(a) || isNaN(b) || a> b || b>arr.length));
 // *
 // *
 let arr = ["a", "b", "c", "d", "e", "f", "g"];
-console.log(splitArr(arr, 2, 5));
+console.log(splitArrFilter(arr, 2, 5));
